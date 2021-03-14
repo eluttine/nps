@@ -1,19 +1,19 @@
 # NPS application
 
-Net Promoter Score application written in Node.js. The backend uses Express web application framework and the frontend is written using React.
+Net Promoter Score application written in Node.js. The back-end uses Express web application framework and the front-end is written using React.
 
-## Running backend
+## Running back-end
 
-Install dependencies and start the NPS backend devepment server by running following commands in `backend` folder.
+Install dependencies and start the NPS back-end development server by running following commands in `backend` folder.
 
 ```
 $ npm install
 $ npm start
 ```
 
-## Running frontend
+## Running front-end
 
-Open another terminal window and go to `frontend` folder and run following commands to start frontend.
+Open another terminal window and go to `frontend` folder and run following commands to start front-end.
 
 ```
 $ npm install
@@ -21,3 +21,7 @@ $ npm start
 ```
 
 A browser should open survey at <http://localhost:3000/survey1>. Two other surveys are available at <http://localhost:3000/survey2> and <http://localhost:3000/survey3>.
+
+## Answers
+
+Answers given via web UI are stored as JSON format under `backend/answers` folder.
