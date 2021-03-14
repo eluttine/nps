@@ -1,0 +1,31 @@
+{
+  "survey_id": "survey3",
+  "thank_you_text": "Thank you for answering!",
+  "pages": [
+    {
+      "id": "page1",
+      "questions": [
+        {
+          "name": "question1",
+          "type": "textarea",
+          "label": "Where did get the link to this survey?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "page2",
+      "questions": [
+        {
+          "name": "nps",
+          "type": "nps",
+          "label": "How likely are you to recommend our service to a friend or colleague?",
+          "range_min": 1,
+          "range_max": 5,
+          "required": true
+        }
+      ]
+    }
+  ]
+}
+

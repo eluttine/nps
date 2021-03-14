@@ -1,0 +1,57 @@
+### 200 OK, get survey with id
+
+GET http://localhost:5000/surveys/survey1
+
+### 404 NOT FOUND, get survey with id
+
+GET http://localhost:5000/surveys/2038402
+
+### 201 CREATED, NPS question post with answer 6
+
+POST http://localhost:5000/answer HTTP/1.1
+content-type: application/json
+
+{
+  "survey_id": "survey1",
+  "page_id": "page1",
+  "answer_id": "12345",
+  "questions": [
+    {
+      "name": "nps",
+      "answer": "6"
+    }
+  ]
+}
+
+### 201 CREATED, NPS question post with answer 7
+
+POST http://localhost:5000/answer HTTP/1.1
+content-type: application/json
+
+{
+  "survey_id": "survey1",
+  "page_id": "page1",
+  "answer_id": "12345",
+  "questions": [
+    {
+      "name": "nps",
+      "answer": "7"
+    }
+  ]
+}
+
+### 400 BAD REQUEST, NPS question post with missing answer_id
+
+POST http://localhost:5000/answer HTTP/1.1
+content-type: application/json
+
+{
+  "survey_id": "survey1",
+  "page_id": "page1",
+  "questions": [
+    {
+      "name": "nps",
+      "answer": "8"
+    }
+  ]
+}
